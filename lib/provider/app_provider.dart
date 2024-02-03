@@ -6,11 +6,14 @@ class AppProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+// count
   int countLikes = 0;
+
+  // for clicking like
   bool isClicked = false;
+
+  // for dark appereance
   bool isDark = false;
-
-
 
   bool checkLike() {
     if (countLikes <= 0) {
