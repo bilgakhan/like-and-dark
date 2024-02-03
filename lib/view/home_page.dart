@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
                 children: [
                   InkWell(
                     onTap: () {
-                      provider.isClicked ? provider.dislike() : provider.like();
+                      provider.like();
                     },
                     child: provider.isClicked
                         ? const Icon(
